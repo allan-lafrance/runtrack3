@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon formulaire</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+  <header class="#90a4ae blue-grey lighten-2 center-align">
+    <nav>
+        <ul>
+          <li><a href="index.php">Accueil</a></li>
+          <li><a href="index.php">Inscription</a></li>
+          <li><a href="index.php">Connexion</a></li>
+          <li><a href="index.php">Rechercher</a></li>
+        </ul>
+    </nav>
+  </header>
+
+    <section>
+    <h2>Formulaire de création de compte</h2>
+    <form action="index.php" method="post">
+        <div>
+          <label for="civility">Civilité:</label>
+          <input type="radio" id="mr" name="civility" value="mr">
+          <label for="mr">M.</label>
+          <input type="radio" id="mrs" name="civility" value="mrs">
+          <label for="mrs">Mme</label>
+        </div>
+        <div>
+          <label for="first-name">Prénom:</label>
+          <input type="text" id="first-name" name="first_name" required>
+        </div>
+        <div>
+          <label for="last-name">Nom:</label>
+          <input type="text" id="last-name" name="last_name" required>
+        </div>
+        <div>
+          <label for="address">Adresse:</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+          <label for="confirm-password">Confirmez le mot de passe:</label>
+          <input type="password" id="confirm-password" name="confirm_password" required>
+        </div>
+        <div>
+          <label for="passions">Passions:</label>
+          <input type="checkbox" id="informatique" name="passions[]" value="informatique">
+          <label for="informatique">Informatique</label>
+          <input type="checkbox" id="voyages" name="passions[]" value="voyages">
+          <label for="voyages">Voyages</label>
+          <input type="checkbox" id="sport" name="passions[]" value="sport">
+          <label for="sport">Sport</label>
+          <input type="checkbox" id="lecture" name="passions[]" value="lecture">
+          <label for="lecture">Lecture</label>
+        </div>
+        <input type="submit" value="Valider">
+      </form> 
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="index.php">Inscription</a></li>
+        <li><a href="index.php">Connexion</a></li>
+        <li><a href="index.php">Rechercher</a></li>
+      </ul>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
