@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	padding: 0;
+  }
+  
+  .section {
+	height: 200px;
+	background-color: #88c1d0;
+  }
+  
+  @media (min-width: 600px) {
+	.section:nth-child(2n) {
+	  background-color: #ffca4b;
+	}
+  }
+  
+  @media (min-width: 900px) {
+	.section:nth-child(3n) {
+	  background-color: #275fa0;
+	}
+  }
+  
+  @media (min-width: 1200px) {
+	.section:nth-child(4n) {
+	  background-color: #ffffff;
+	}
+  }
+  
